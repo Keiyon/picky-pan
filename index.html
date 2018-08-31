@@ -1,137 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-   
-     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .hero-text {
-          text-align: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white;
-        }
-        
-        .hero-text button {
-          border: none;
-          outline: 0;
-          display: inline-block;
-          padding: 10px 25px;
-          color: black;
-          background-color: #ddd;
-          text-align: center;
-          cursor: pointer;
-        }
-        
-        .hero-text button:hover {
-          background-color: #555;
-          color: white;
-        }
-   
-   
-        body {
-            font-family: "Lato", sans-serif;
-        }
-        
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-        
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-        
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-        
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-        </style>
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
 
-                <body>
-                
-                <div class="hero-image">
-                  <div class="hero-text">
-                    <h1 style="font-size:50px">We are Picky-Pan</h1>
-                    <p>Sign up for recipes of the day</p>
-                    <button>Subscribe</button>
-                    <span>-------&nbsp;OR&nbsp;-------</span>
-                    <button>Search</button>
-                  </div>
-                </div>
-                
-</head>
 <body>
-    <h1 class="animated infinite zoomIn delay-25s">PICKY-PAN</h1>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About Us</a>
-        <a href="#">Recipe Submittion</a>
-        <a href="#">User Registration</a>
-        <a href="#">All Recipes</a>
-        <a href="#">Contact Us</a>
-    
-      </div>
-      
-      <div id="main">
-        <h2>What we offer</h2>
-        <p>Find everything you need and more</p>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-      </div>
-      
-      <script>
-      function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-      }
-      
-      function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-      }
-      </script>
-    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script> 
-</body>
+
+    <div class="hero-image container">
+        <div>
+            <h1 class="declaration col s12">We are Picky-Pan</h1>
+            <h3 class="tagline col s12">This is the tagline of the company</h3>
+            <div class="col s6 offset-s3 hero-search-wrap">
+                <input type="text" class="hero-search" placeholder="Search from 100,000+ recipes"
+                ><input type="submit" class="hero-submit" value="Search">    
+            </div>
+        </div>
+    </div>
+
+    </head>
+
+    <body>
+        <h1 class="animated infinite zoomIn delay-25s">PICKY-PAN</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About Us</a>
+            <a href="#">Recipe Submittion</a>
+            <a href="#">User Registration</a>
+            <a href="#">All Recipes</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </div>
+
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+    </body>
+
 </html>
