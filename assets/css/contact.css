@@ -9,6 +9,12 @@ html {
 nav {
     background-color: firebrick;
 }
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
 
 .firstname {
     margin-top: 300px;
