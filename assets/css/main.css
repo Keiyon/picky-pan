@@ -28,10 +28,6 @@ nav {
     text-align: center;
 }
 
-.hero-search, .hero-submit {
-    display: inline-block;
-}
-
 .hero-search {
     width: 350px!important;
     padding: 0 20px!important;

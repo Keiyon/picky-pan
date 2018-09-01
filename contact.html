@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <title>Picky-Pan / Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-</head>
-<body>
 
 	<header>
         <nav>
@@ -24,27 +22,32 @@
         </nav>
 	</header>
 	
-	<div class="content">
-		<!-- Main content -->
-		<div class="main">
-			<h1 class="page-title">Contact</h1>
-			<form action="#" class="contact">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Your Name">
-				<label for="email">Email</label>
-				<input type="text" name="email" id="email" placeholder="example@email.com">
-				<label for="name">Message</label>
-				<textarea rows="10" cols="40" name="message" id="message"></textarea>
-                <input type="submit" value="Submit">
-			</form>
-			
-		</div> <!-- .main -->
+    <div class="container">
+            <form class="col s12">
+              <div class="container">
+                <div class="firstname">
+                  <input placeholder="First Name" id="Firstname" type="text" class="validate">
+                </div>
+                <div class="lastname">
+                <input placeholder="Last Name" id="lastname" type="text" class="validate">
+                </div>
+                    <div class="email">
+                     <input placeholder="Email" id="email" type="text" class="validate">
+                    </div>
+                   <div class="message">
+                     <input placeholder="Message Us" id="message" type="text" class="validate">
+                    </div>
+                    <input type="submit" class="message-submit" value="Submit">
+                    
+                    </div>
+                </div>
+                
 
 
 
+    </body>
 	<footer>
 		&copy; Copywrite __________
 	</footer>
 
-</body>
 </html>
