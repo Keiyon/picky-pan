@@ -1,0 +1,6 @@
+.card {
+   height: 50%;
+   width:80%;
+   align-content: center;
+   display: inline-block !important;
+}
