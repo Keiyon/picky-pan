@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 .card {
    height: 50%;
    width:80%;
    align-content: center;
    display: inline-block !important;
 }
-=======
 html {
     font-family: 'Raleway', sans-serif;
     background-image: url("../images/artichokesalad.jpg");
@@ -32,4 +30,3 @@ h1 {
     color: white;
     text-align: center;
 }
->>>>>>> 131782234ceb7698aeab64b2daca0d05d6c930cb
