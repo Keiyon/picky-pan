@@ -56,3 +56,12 @@ nav {
     background-color: crimson;
     transition: background-color 0.2s ease-in-out;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+}
