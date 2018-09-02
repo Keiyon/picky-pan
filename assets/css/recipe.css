@@ -1,26 +1,32 @@
-html {
-    font-family: 'Raleway', sans-serif;
-    background-image: url("../images/artichokesalad.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 0;
-}
-nav {
-    background-color: firebrick;
-}
-h1 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: center;
-    
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: firebrick;
-    color: white;
-    text-align: center;
-}
+.card {
+    height: 50%;
+    width:80%;
+    align-content: center;
+    display: inline-block !important;
+ }
+ html {
+     font-family: 'Raleway', sans-serif;
+     background-image: url("../images/artichokesalad.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     height: 100%;
+     margin: 0;
+ }
+ nav {
+     background-color: firebrick;
+ }
+ h1 {
+     font-family: 'Raleway', sans-serif;
+     color: white;
+     text-align: center;
+     
+ }
+ .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: firebrick;
+     color: white;
+     text-align: center;
+ }
