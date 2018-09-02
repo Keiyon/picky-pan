@@ -1,0 +1,42 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../images/bone-marrow.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+nav {
+    background-color: firebrick;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+.About {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.description {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+}
