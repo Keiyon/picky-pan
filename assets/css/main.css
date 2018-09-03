@@ -114,3 +114,26 @@ nav {
     margin-bottom: 70px;
     margin-top: 70px;
 }
+
+.recipe-filters-box {
+    position: fixed;
+    top: 100px;
+    left: 80px;
+    width: 300px;
+    background-color: #e8e8e8;
+    color: #333;
+    border: 1px solid #555;
+}
+
+.filter-wrap {
+    padding: 5px 10px;
+    border-bottom: 1px solid #555;
+}
+
+.filter-wrap:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    color: #333;
+}
