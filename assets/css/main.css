@@ -150,3 +150,34 @@ nav {
 label {
     color: #333;
 }
+
+.recipe-search-box {
+    display: inline-block;
+    width: 540px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: center;
+}
+
+.recipe-search-box .recipe-input {
+    width: 340px!important;
+    padding-left: 20px!important;
+    border-bottom: 2px solid firebrick!important;
+    box-shadow: none!important;
+    display: inline-block;
+    color: black;
+}
+
+.recipe-search-box .recipe-input::placeholder {
+    color: #333;
+}
+
+.recipe-search-box .recipe-submit {
+    margin-left: 20px;
+    width: 140px;
+    padding: 10px;
+    background-color: firebrick;
+    display: inline-block;
+    color: white;
+}
