@@ -11,6 +11,16 @@ $(document).ready(function() {
             method: 'GET'
         }).then(function(data) {
             console.log(data);
+
+            // //creating a div to hold in the card
+            // var searchItem = $("<div class='Item'>");
+            // //storing the  data
+            // var recipeResults = data.hits;
+
+            // //creating an element to have results displayed
+            // var pOne = $("<p>").text("recipe results" + recipeResults);
+            // //display the results
+            // searchItemDiv.append(pOne);
         });
     });
 });
