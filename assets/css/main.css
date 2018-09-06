@@ -122,7 +122,7 @@ nav {
 }
 
 .recipe-filters-box {
-    position: fixed;
+    position: absolute;
     top: 100px;
     width: 1262px;
     left: 50%;
@@ -163,10 +163,18 @@ label {
 .recipe-search-box .recipe-input {
     width: 340px!important;
     padding-left: 20px!important;
-    border-bottom: 2px solid firebrick!important;
+    border-bottom: 2px solid #333!important;
     box-shadow: none!important;
     display: inline-block;
     color: black;
+    border-top-left-radius: 5px!important;
+    border-top-right-radius: 5px!important;
+}
+
+.recipe-search-box .recipe-input:hover, .recipe-search-box .recipe-input:focus, .recipe-search-box .recipe-input:active {
+    border-bottom-color: firebrick!important;
+    background-color: rgba(80, 80, 80, 0.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .recipe-search-box .recipe-input::placeholder {
@@ -180,4 +188,12 @@ label {
     background-color: firebrick;
     display: inline-block;
     color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.recipe-search-box .recipe-submit:hover, .recipe-search-box .recipe-submit:focus, .recipe-search-box .recipe-submit:active {
+    background-color: crimson;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
 }
