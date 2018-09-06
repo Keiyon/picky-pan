@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var searchAppKey = '46a6bdb8a981a4282490c5f51686c168';
+    var searchAppKey = '527e95f3d9c97c58644fa822211d8226';
     var searchAppId = '9ce8c3da';
     var recipeSearches = $('#recipeSearches');
     var alc = $('input[value="alcohol-free"]');
@@ -39,7 +39,7 @@ $(document).ready(function () {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
-    $('#recipeSearchSubmit').on('click', function (event) {
+    function loadRecipes(event) {
         event.preventDefault();
         recipeSearches.empty();
         var searchItem = $('#recipeSearchBox').val();
@@ -244,7 +244,6 @@ $(document).ready(function () {
         if (dietLabel !== '&diet=') {
             queryURL += dietLabel;
         }
-        console.log(queryURL);
         $.ajax({
             url: queryURL,
             method: 'GET',
@@ -295,5 +294,15 @@ $(document).ready(function () {
                 recipeSearches.append(colDiv);
             }
         });
+    }
+
+    $("#recipeSearchBox").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#recipeSearchSubmit").click();
+        }
+    });
+
+    $('#recipeSearchSubmit').click(function () {
+        loadRecipes(event);
     });
 });
