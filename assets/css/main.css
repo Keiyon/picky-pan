@@ -1,5 +1,5 @@
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif!important;
     color: white;
     background-image: url('../images/retro_intro.png');
     margin: 0;
@@ -11,18 +11,6 @@ html.home {
     background-repeat: no-repeat;
     height: 100%;
 }
-
-/* html.contact {
-    background-image: url("../images/bone-marrow.jpg");
-}
-
-html.about {
-    background-image: url("../images/pasta.jpg");
-}
-
-html.recipes {
-    background-image: url("../images/artichokesalad.jpg");
-} */
 
 nav {
     background-color: firebrick;
@@ -107,6 +95,10 @@ nav {
     box-shadow: 1px 1px 10px 1px rgba(60, 60, 60, 0.6);
 }
 
+.card-title {
+    color: #ffffff!important;
+}
+
 .container.content-container {
     background-color: white;
     color: black;
@@ -130,14 +122,12 @@ nav {
     margin-left: -631px;
     background-color: #fff;
     color: #333;
-    /* border: 1px solid #555; */
     z-index: 5;
     box-shadow: 3px 3px 10px 1px rgba(80, 80, 80, 0.5);
 }
 
 .filter-wrap {
     padding: 5px 10px;
-    /* border-bottom: 1px solid #555; */
     display: inline-block;
     width: 180px;
     margin: 0;
@@ -200,4 +190,18 @@ label {
 
 .input-search {
     color: black
+}
+
+a.recipe-reroute {
+    color: white!important;
+    background-color: firebrick!important;
+    display: inline-block;
+    padding: 30px;
+    font-size: 36px;
+    border-radius: 20px!important;
+}
+
+a.recipe-reroute:hover {
+    background-color: crimson!important;
+    transition: background-color 0.2s ease-in-out;
 }

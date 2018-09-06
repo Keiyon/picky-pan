@@ -38,6 +38,7 @@ $(document).ready(function () {
     function capitalize(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
+
     $('#recipeSearchSubmit').on('click', function (event) {
         event.preventDefault();
         recipeSearches.empty();
@@ -246,7 +247,10 @@ $(document).ready(function () {
         console.log(queryURL);
         $.ajax({
             url: queryURL,
-            method: 'GET'
+            method: 'GET',
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                recipeSearches.append($('<h2 class="enter-recipe">').text('Sorry! No recipes with those specifications...'));
+            }
         }).then(function (data) {
             var results = data.hits;
             for (var i = 0; i < results.length; i++) {
