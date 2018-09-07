@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var searchAppKey = '527e95f3d9c97c58644fa822211d8226';
+    var searchAppKey = '786802ea47922e8d34ad5e0a894a4c3a';
     var searchAppId = '9ce8c3da';
     var recipeSearches = $('#recipeSearches');
     var alc = $('input[value="alcohol-free"]');
