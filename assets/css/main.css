@@ -143,7 +143,7 @@ label {
 
 .recipe-search-box {
     display: inline-block;
-    width: 540px;
+    width: 360px;
     padding: 0;
     margin: 0;
     border: 0;
@@ -151,8 +151,8 @@ label {
 }
 
 .recipe-search-box .recipe-input {
-    width: 340px!important;
-    padding-left: 20px!important;
+    width: 227px!important;
+    padding-left: 13px!important;
     border-bottom: 2px solid #333!important;
     box-shadow: none!important;
     display: inline-block;
@@ -172,9 +172,9 @@ label {
 }
 
 .recipe-search-box .recipe-submit {
-    margin-left: 20px;
-    width: 140px;
-    padding: 10px;
+    margin-left: 13.6666667px;
+    width: 93.3333333px;
+    padding: 7px;
     background-color: firebrick;
     display: inline-block;
     color: white;

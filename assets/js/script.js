@@ -4,29 +4,16 @@ $(document).ready(function () {
     var recipeSearches = $('#recipeSearches');
     var alc = $('input[value="alcohol-free"]');
     var bal = $('input[value="balanced"]');
-    var cel = $('input[value="celery-free"]');
-    var cru = $('input[value="crustacean-free"]');
     var dai = $('input[value="dairy-free"]');
     var egg = $('input[value="egg-free"]');
     var glu = $('input[value="gluten-free"]');
     var fib = $('input[value="high-fiber"]');
     var pro = $('input[value="high-protein"]');
-    var kid = $('input[value="kidney-friendly"]');
-    var kos = $('input[value="kosher"]');
     var car = $('input[value="low-carb"]');
     var fat = $('input[value="low-fat"]');
-    var pot = $('input[value="low-potassium"]');
     var sod = $('input[value="low-sodium"]');
-    var lup = $('input[value="lupine-free"]');
-    var mus = $('input[value="mustard-free"]');
-    var oil = $('input[value="no-oil-added"]');
-    var sug = $('input[value="low-sugar"]');
     var pal = $('input[value="paleo"]');
     var pea = $('input[value="peanut-free"]');
-    var pes = $('input[value="pescatarian"]');
-    var por = $('input[value="pork-free"]');
-    var red = $('input[value="red-meat-free"]');
-    var ses = $('input[value="sesame-free"]');
     var she = $('input[value="shellfish-free"]');
     var soy = $('input[value="soy-free"]');
     var sugCon = $('input[value="sugar-conscious"]');
@@ -58,18 +45,6 @@ $(document).ready(function () {
             }
             dietLabel += bal.val();
         }
-        if (cel.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += cel.val();
-        }
-        if (cru.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += cru.val();
-        }
         if (dai.prop('checked')) {
             if (healthLabel !== '&health=') {
                 healthLabel += '&health=';
@@ -100,18 +75,6 @@ $(document).ready(function () {
             }
             dietLabel += pro.val();
         }
-        if (kid.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += kid.val();
-        }
-        if (kos.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += kos.val();
-        }
         if (car.prop('checked')) {
             if (dietLabel !== '&diet=') {
                 dietLabel += '&diet=';
@@ -124,41 +87,11 @@ $(document).ready(function () {
             }
             dietLabel += fat.val();
         }
-        if (pot.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += pot.val();
-        }
         if (sod.prop('checked')) {
             if (dietLabel !== '&diet=') {
                 dietLabel += '&diet=';
             }
             dietLabel += sod.val();
-        }
-        if (lup.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += lup.val();
-        }
-        if (mus.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += mus.val();
-        }
-        if (oil.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += oil.val();
-        }
-        if (sug.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += sug.val();
         }
         if (pal.prop('checked')) {
             if (healthLabel !== '&health=') {
@@ -171,30 +104,6 @@ $(document).ready(function () {
                 healthLabel += '&health=';
             }
             healthLabel += pea.val();
-        }
-        if (pes.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += pes.val();
-        }
-        if (por.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += por.val();
-        }
-        if (red.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += red.val();
-        }
-        if (ses.prop('checked')) {
-            if (healthLabel !== '&health=') {
-                healthLabel += '&health=';
-            }
-            healthLabel += ses.val();
         }
         if (she.prop('checked')) {
             if (healthLabel !== '&health=') {
